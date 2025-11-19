@@ -14,9 +14,30 @@ $grupo = selectAllPessoa();
 <body>
 
 <div class="container">
+<<<<<<< HEAD
     <div class="header">
         <h1>Agenda de Contatos</h1>
     </div>
+=======
+    <body>
+     <div class="posicionarCabecalho">
+          <h1>Agenda Pessoal</h1>
+      </div>
+      <table border="1" class="table">
+          <thead class="thead-light">
+              <tr>
+                  <th>Nome</th>
+                  <th>Nascimento</th>
+                  <th>Telefone</th>
+                  <th>Endereço</th>
+                  <th>Edita</th>
+                  <th>Excluir</th>
+              </tr>
+          </thead>
+          <tbody>
+             <?php 
+                foreach($grupo as $pessoa) { ?>
+>>>>>>> cbbd63cef741fe075b9f819d76dfec65734e61c0
 
     <table class="table">
         <thead>
