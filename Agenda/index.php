@@ -57,9 +57,10 @@
               ?>
           </tbody>
      </table>
-      <div class="text-center">
-           <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar pessoa</a></button>
-      </div>
+     <div class="text-center">
+        <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar Contato</a></button>
+                </div>   
+
        <?php
             
             function formatoData($data) {
