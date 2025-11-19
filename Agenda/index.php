@@ -26,7 +26,7 @@
                   <th>Nascimento</th>
                   <th>Telefone</th>
                   <th>Endereço</th>
-                  <th>Editar</th>
+                  <th>Edita</th>
                   <th>Excluir</th>
               </tr>
           </thead>
