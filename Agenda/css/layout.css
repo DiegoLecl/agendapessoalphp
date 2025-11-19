@@ -1,0 +1,105 @@
+/* ===== LAYOUT GERAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+/* ===== CABEÇALHO ===== */
+.header {
+    text-align: center;
+    background: #4a63e7;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* ===== TABELA ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background: #e7e7e7;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Botões */
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background: #3498db;
+    color: white;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-add {
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.form-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 450px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #4a63e7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
