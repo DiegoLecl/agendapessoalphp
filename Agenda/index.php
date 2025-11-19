@@ -61,7 +61,7 @@
            <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar pessoa</a></button>
       </div>
        <?php
-            // Função para formatar a data
+            
             function formatoData($data) {
                 $array = explode("-", $data);
                 $novaData = $array[2]."/".$array[1]."/".$array[0];
