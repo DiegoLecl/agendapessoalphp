@@ -1,36 +1,45 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Pessoa</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
 
-
-?>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<meta charset="UTF-8">
 <div class="container">
-    <form name="dadosPessoa" action="conexao.php" method="post">
-        <table>
-            <tbody>
-                <tr>
-                    <td>Nome: </td>
-                    <td><input type="text" name="nome" value=""></td>
-                </tr>
-                <tr>
-                    <td>Nascimento: </td>
-                    <td><input type="date" name="nascimento" value=""></td>
-                </tr>
-                <tr>
-                    <td>Telefone: </td>
-                    <td><input type="text" name="telefone" value=""></td>
-                </tr>
-                <tr>
-                    <td>Endereço: </td>
-                    <td><input type="text" name="endereco" value=""></td>
-                </tr>
-                <tr>
-                    <td><input type="hidden" name="acao" value="inserir"></td>
-                    <td><input type="submit" name="Enviar" value="Enviar"></td>
-                </tr>
-            </tbody>
-        </table> 
-    </form>
+    <div class="header">
+        <h1>Adicionar Pessoa</h1>
+    </div>
+
+    <div class="form-card">
+        <form action="conexao.php" method="post">
+
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label>Data de Nascimento</label>
+                <input type="date" name="nascimento">
+            </div>
+
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="text" name="telefone">
+            </div>
+
+            <div class="form-group">
+                <label>Endereço</label>
+                <input type="text" name="endereco">
+            </div>
+
+            <input type="hidden" name="acao" value="inserir">
+            <input type="submit" value="Salvar">
+        </form>
+    </div>
 </div>
+
+</body>
+</html>

@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-
-<?php include("conexao.php");
-
-    $grupo = selectAllPessoa();
-    
+<?php 
+include("conexao.php");
+include("funcoes.php"); 
+$grupo = selectAllPessoa();
 ?>
 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>CRUD com PHP e MYSQL - INSERT</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="css/layout.css">
 </head>
+<body>
+
 <div class="container">
+<<<<<<< HEAD
+    <div class="header">
+        <h1>Agenda de Contatos</h1>
+    </div>
+=======
     <body>
      <div class="posicionarCabecalho">
           <h1>Agenda Pessoal</h1>
@@ -33,6 +37,7 @@
           <tbody>
              <?php 
                 foreach($grupo as $pessoa) { ?>
+>>>>>>> cbbd63cef741fe075b9f819d76dfec65734e61c0
 
                    <tr>
                       <th><?=$pessoa["nome"]?></th>
@@ -57,10 +62,9 @@
               ?>
           </tbody>
      </table>
-     <div class="text-center">
-        <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar Contato</a></button>
-                </div>   
-
+      <div class="text-center">
+           <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar pessoa</a></button>
+      </div>
        <?php
             
             function formatoData($data) {
@@ -72,4 +76,6 @@
         ?>
     </body>
 </div>
+
+</body>
 </html>
